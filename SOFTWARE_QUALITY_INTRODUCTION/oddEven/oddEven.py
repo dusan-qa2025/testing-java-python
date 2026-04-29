@@ -20,3 +20,5 @@ def oddEven(numbers):
         print("Total odd:" + str(totalOdd))
         
 oddEven(numbers)
+
+#radon cc oddEven -a - merenje kompleksnosti koda
