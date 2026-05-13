@@ -4,7 +4,7 @@ import json
 connection = conn.connect(
     host="localhost", 
     user="root",
-    password = "", # Unesi svoj password
+    password = "Dusan-qa-tester", # Unesi svoj password
     database = "sakila"
 )
 
