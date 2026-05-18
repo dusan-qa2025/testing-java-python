@@ -13,7 +13,7 @@ This project is a Java application developed using:
 
 The application calculates:
 
-- User age in ytyears
+- User age in years
 - Total number of days since birth
 
 It also validates:
