@@ -19,6 +19,7 @@ for country in countries:
 
     if name == "Serbia":
         print("Pronadjena drzava")
+
     assert name is not None
     assert capital is not None
     assert population is not None
