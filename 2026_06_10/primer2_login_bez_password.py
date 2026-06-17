@@ -13,10 +13,12 @@ user_text_field = driver.find_element(By.ID, "user-name")
 user_text_field.send_keys("standard_user")
 
 driver.find_element(By.ID, "login-button").click()
+
 error_message = wait.until(
     EC.visibility_of_element_located((By.CSS_SELECTOR, "[data-test='error']"))
 )
 
 assert "Password is required" in error_message.text
+
 time.sleep(5)
 driver.quit()

@@ -11,9 +11,10 @@ driver.get("https://quotes.toscrape.com/")
 
 quotes = driver.find_elements(By.CLASS_NAME, "quote")
 
-first_tags_from_quotes = []
+first_tags_from_quotes = [] # pokupim prve tagove iz svakog
 
 for quote in quotes:
+    # trazim prvi tag
     first_tag = quote.find_element(By.CLASS_NAME, "tag")
     first_tags_from_quotes.append(first_tag.text)
 
@@ -24,6 +25,11 @@ for tag in first_tags_from_quotes:
     )
     tag_link.click()
 
+    heading = wait.until(
+        EC.visibility_of_element_located((By.TAG_NAME, "h3"))
+    )
+
+    assert heading.text == f"Viewing tag: {tag}"
 
 time.sleep(5)
 driver.quit()
