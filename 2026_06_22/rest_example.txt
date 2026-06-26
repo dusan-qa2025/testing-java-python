@@ -1,0 +1,36 @@
+REST
+HTTP metode (GET, POST, PUT, DELETE..)
+URL
+JSON
+
+GET
+Base URL + /products
+         + /cars
+
+JSON
+{
+    "id":1,
+    "name":"Laptop",
+    "price":1200
+}
+
+[
+    {
+    "id":1,
+    "name":"Laptop",
+    "price":1200,
+    "images": ["img1.png", "img2.png"],
+    "owner":null,
+    "info" : {
+        "proizvodjac":"Lenovo",
+        "garancija":true
+       }
+    },
+    {
+    "id":2,
+    "name":"Keyboard",
+    "price":100
+    },
+]
+
+API - Application Programming Interface
