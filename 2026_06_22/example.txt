@@ -1,0 +1,13 @@
+JSON
+{
+    "name":"Ana",
+    "age":25,
+    "city":"Belgrade"
+}
+
+XML
+<user id="1">
+    <name>Ana</name>
+    <age>25</age>
+    <city>Belgrade</city>
+</user>

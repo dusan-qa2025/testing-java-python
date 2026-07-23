@@ -1,0 +1,55 @@
+E commerce sajt:
+-Login negativni scenariji-
+TC1. Login bez unetih popdataka
+TC2. Login sa user name-om ali bez passworda
+TC3. Login sa pogresnim podacima
+
+-Login pozitivan scenario-
+TC4. Uspesan login
+
+-Prodavnica-
+TC5. Dodavanje prvog proizvoda u korpu
+TC6. Otvaranje korpe i provera proizvoda
+TC7. Uspesna kupovina (duzi flow)
+
+-------------------------------------------------
+TC 1 - Login bez unetih podataka
+Koraci:
+Otvori saucedemo.com
+Ne unosi username
+Ne unosi password
+Klikni Login
+
+Ocekivani rezultat:
+Prikazuje se error poruka: Username is required
+
+TC 2 - Login bez bez sifre, ispravno ime
+Koraci:
+Otvori saucedemo.com
+Unesi user name standard_user
+Ne unosi password
+Klikni Login
+
+Ocekivani rezultat:
+Prikazuje se error poruka: Password is required
+
+TC 3 - Login sa pogresnim podacima
+Koraci:
+Otvori saucedemo.com
+Unesi pogresan user name - test
+Unesi pogresan password - 123
+Klikni Login
+
+Ocekivani rezultat:
+Prikazuje se error poruka: 
+Username and password do not match any user in this service
+
+TC 4 - Uspesan login
+Koraci:
+Otvori saucedemo.com
+Unesi ispravan user name - standard_user
+Unesi ispravan password - secret_sauce
+Klikni Login
+
+Ocekivani rezultat:
+Prikazuje se naslov Products

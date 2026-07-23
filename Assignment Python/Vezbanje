@@ -1,0 +1,48 @@
+
+
+messages = { "srb":"Zdravo", "eng":"Hello", "slo":"Zivjo", "it":"Ciao"}
+language = input("Choose language(srb, eng, slo or it): ")
+print(messages[language])
+
+# Ispisuje poruke na zeljeni jezik
+
+
+s = "Hello World"
+print(s[::2])
+
+# Svako drugo slovo ispisuje
+
+H = 10
+a = 1
+
+for i in range(H) :
+    for j in range (a) :
+        print("", end="")
+    a+=1
+    print("")
+
+# Stampa prazna polja
+
+for i in range (-10, 0) :
+    print(i)
+print("Done!")
+
+# Ispise brojeve od - 10 do 0
+
+
+a = 15
+b = 1
+while b < 5:
+    print(str(a) + "*" + str(b) + "=" + str(a*b))
+    b += 1
+
+
+car_status = True
+speed = 70
+if car_status == True:
+ if speed > 50:
+     print("You have exceeded the speed limit")
+ else:
+     print("Speed is ok.")
+else:
+     print("The car is on the parking lot.")
